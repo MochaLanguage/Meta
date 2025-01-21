@@ -121,7 +121,7 @@ Multiplication: `mlt` to multiply an integer by a value.
 Division: `div` to divide an integer by a value.  
 Modulus: `mod` to get the remainder of an integer division.  
 Power: `pow` to raise an integer to the power of a value.  
-Random: `rng` to set an integer to a random value within a specified range.  
+Random: `rng` to set an integer to a random value within a specified range. (Please only do positive integers because in some interpreters it breaks and I don't wanna fix it)
 
 #### Example
 ```
