@@ -9,27 +9,30 @@ Are defined by having double quotes at the start and end of the string:
 This is not a string :(
 ```
 ## Comments
-To write comments in your program, there are 2 options:  
-1. To start and end your comment with `/`. No matter where it is in the program, even in the middle of setting a variable name, it will work!   
-You can also escape the `/` character using `\`.
-2. Start a new line with a word that is not a recognized command: the line will get skipped. This is not recommended, however!
+To write comments in your program, start a new line with a word that is not a recognized command so the line will get skipped.  
+It is recommended however to have a consistent comment prefix, such as `//`.
 
 ```
-out "Hi\n" /prints out Hi to the screen/
-out "He/test/llo\n"
+out "Hi\n"
+^ prints out Hi to the screen
+out "Hello\n"
 The previous line would print out "Hello\n"
-out "Hi \/ there\n" /Escapes the character, printing out "Hello / there"/
+vvv this next line is going to print out "Hi there!\n"
+out "Hi there!\n"
+end
 ```
 ## Instantiation Lines
 Lines that begin with "." are always run at the beginning of the program, in order of line.  
 This is useful for defining where functions are placed, with functions typically being at the end of the file.  
 It is also a good idea to have a variable to store where you jumped from, otherwise you would be stuck at the function. In this example, `goBack` is used.
 ```
-.var lin coolFunctionName /This is run at the beginning of the file!/
+.var lin coolFunctionName 
+This is run at the beginning of the file!
 out "This is pretty cool."
 jmp goBack
 
-.var lin otherFunction /This is run right after!/
+.var lin otherFunction
+This is run right after!
 out "Okay we get it"
 jmp goBack
 ```
