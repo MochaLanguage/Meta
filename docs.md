@@ -218,13 +218,13 @@ red
 ### Booleans
 #### Methods
 String equality: `str eql` to check if two strings are equal.  
-Numeric equality: `num eql` to check if two numbers are equal.  
+Numeric equality: `num eql` to check if two numbers are equal.
 Greater than: `num grt` to check if one number is greater than another.  
 Less than: `num lss` to check if one number is less than another.  
-Logical AND: `bln and` to perform a logical AND operation.  
-Logical OR: `bln or` to perform a logical OR operation.  
-Logical XOR: `bln xor` to perform a logical XOR operation.  
-Logical NOT: `bln not` to perform a logical NOT operation.  
+Logical AND: `bin and` to perform a logical AND operation.  
+Logical OR: `bin or` to perform a logical OR operation.  
+Logical XOR: `bin xor` to perform a logical XOR operation.  
+Logical NOT: `bin not` to perform a logical NOT operation.  
 
 #### Example
 ```
@@ -246,10 +246,10 @@ out ", 10 is not less than 5!\n"
 
 var bln trueValue num eql 1 1
 var bln falseValue num eql 1 2
-var bln andResult bln and trueValue falseValue
-var bln orResult bln or trueValue falseValue
-var bln xorResult bln xor trueValue falseValue
-var bln notResult bln not trueValue
+var bln andResult bin and trueValue falseValue
+var bln orResult bin or trueValue falseValue
+var bln xorResult bin xor trueValue falseValue
+var bln notResult bin not trueValue
 out andResult
 out "\n"
 out orResult
