@@ -218,7 +218,7 @@ red
 ### Booleans
 #### Methods
 String equality: `str eql` to check if two strings are equal.  
-Numeric equality: `num eql` to check if two numbers are equal.
+Numeric equality: `num eql` to check if two numbers are equal.  
 Greater than: `num grt` to check if one number is greater than another.  
 Less than: `num lss` to check if one number is less than another.  
 Logical AND: `bin and` to perform a logical AND operation.  
